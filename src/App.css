@@ -1,29 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: white;
+}
+
 .game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.game-header {
   text-align: center;
-  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-.box {
-  width: 300px;
-  height: 300px;
-  background-color: rgb(80, 80, 80);
+.game-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.score-display {
+  background-color: #ff002b;
+  color: #000000;
+  font-size: 1.5rem;
+  padding: 10px 25px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.game-area {
   position: relative;
-  margin: 20px auto;
-  overflow: hidden;
-}
+  width: 300px;
+  height: 450px;
+  background-color: #213261;
+  border-radius: 15px;
+  overflow: hidden;}
 
-.gamma-box {
-  width: 50px;
-  height: 50px;
-  background-color: rgb(200, 50, 50);
+.red-box {
   position: absolute;
-  top: 125px;
+  width: 60px;
+  height: 60px;
+  background-color: #e63946;
+  border-radius: 5px;
 }
 
 .ball {
+  position: absolute;
   width: 20px;
   height: 20px;
-  background-color: gold;
+  background-color: #ffd700;
   border-radius: 50%;
-  position: absolute;
+}
+
+.reset-button {
+  margin-top: 20px;
+  background-color: #0066ff;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.game-instructions {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #cccccc;
+  text-align: center;
+  max-width: 300px;
+}
+
+.permission-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.permission-content {
+  background-color: #2d2d44;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.permission-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.permission-text {
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.permission-button {
+  background-color: #0066ff;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
